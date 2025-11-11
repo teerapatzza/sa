@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    super 191  manny
-</body>
-</html>
+<table style="font-family:Segoe UI,Arial,sans-serif;font-size:14px" width="100%" cellspacing="0" cellpadding="0">
+  <tr><td>
+    <p><b>ขอทบทวนเอกสาร:</b> {{ $json.docId }}</p>
+    <p>โปรดตรวจและกดเลือกการตัดสินใจ:</p>
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="padding-right:10px">
+          <a href="{{ $json.approveReviewUrl }}" 
+             style="background:#107C10;color:#fff;padding:10px 16px;text-decoration:none;border-radius:4px;display:inline-block">
+            Approve
+          </a>
+        </td>
+        <td>
+          <a href="{{ $json.rejectReviewUrl }}" 
+             style="background:#C50F1F;color:#fff;padding:10px 16px;text-decoration:none;border-radius:4px;display:inline-block">
+            Reject
+          </a>
+        </td>
+      </tr>
+    </table>
+    <p style="color:#666">ลิงก์หมดอายุภายใน 24 ชั่วโมง</p>
+  </td></tr>
+</table>
